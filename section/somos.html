@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Somos Isa Y Jose, conocenos">
+    <meta name="keywords" content="Quienes somos, Misiones, Que hacemos, Nuestra familia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsayJose</title>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: gray;
+            color: #eee;
+            width: 100%;
+        }
+
+        input#abrir-cerrar {
+            visibility: hidden;
+            position: absolute;
+            top: -9999px;
+        }
+
+
+        label[for="abrir-cerrar"] {
+            cursor: pointer;
+            padding: 1rem;
+            background-color: gray;
+            color: #fff;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        .cerrar {
+            display: none;
+        }
+
+        #sidebar {
+            width: 0;
+        }
+
+        #contenido {
+            margin-left: 0;
+        }
+
+        input#abrir-cerrar:checked~#sidebar {
+            width: 300px;
+        }
+
+        input#abrir-cerrar:checked+label[for="abrir-cerrar"],
+        input#abrir-cerrar:checked~#contenido {
+            margin-left: 300px;
+            transition: margin-right .4s;
+        }
+
+
+        input#abrir-cerrar:checked+label[for="abrir-cerrar"] .cerrar {
+            display: inline;
+        }
+
+        input#abrir-cerrar:checked+label[for="abrir-cerrar"] .abrir {
+            display: none;
+        }
+
+        .sidebar {
+            position: fixed;
+            height: 100%;
+            width: 0;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: #00324b;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sidebar .boton-cerrar {
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 2rem;
+            display: block;
+            padding: 0;
+            line-height: 1.5rem;
+            margin: 0;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+
+        }
+
+        .sidebar ul,
+        .sidebar li {
+            margin: 0;
+            padding: 0;
+            list-style: none inside;
+        }
+
+        .sidebar ul {
+            margin: 4rem auto;
+            display: block;
+            width: 80%;
+            min-width: 200px;
+        }
+
+        .sidebar a {
+            display: block;
+            font-size: 90%;
+            color: #eee;
+            text-decoration: none;
+
+        }
+
+        .sidebar a:hover {
+            color: #fff;
+            background-color: #f90;
+
+        }
+
+
+        #contenido {
+            transition: margin-right .4s;
+            padding: 1rem;
+        }
+
+        .abrir-cerrar {
+            color: #2E88C7;
+            font-size: 1rem;
+        }
+    </style>
+
+
+
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+        <label for="abrir-cerrar">&#9776; <span class="abrir"></span><span class="cerrar"></span></label>
+        <div id="sidebar" class="sidebar">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="somos.html">Nosotros</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="oracion.html">Oración</a></li>
+                <li><a href="donaciones.html">Donaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+
+        <a href="https://api.whatsapp.com/send?phone=5493512404281" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+    </header>
+    <main>
+
+
+        <section class="objetivos">
+            <div class="encabezado" style="padding-right: 110px; padding-left: 40px">
+                <h1>Isa y José - Candidatos DNM a India</h1>
+                <div class="nuestros-objetivos4">
+                    <div class="carta4">
+
+                        <div class="container">
+                            <iframe class="responsive-iframe"
+                                src="https://www.youtube.com/embed/-uhxowzlIcw?controls=0"></iframe>
+                        </div>
+
+                    </div>
+
+                    <h2>Quienes somos</h2>
+
+                    <h3 style="font-size: 30px">
+
+                        Somos ISA Y JOSE en las redes, pertenecemos a la familia
+                        del Centro Cristiano Cba de los pastores Masalyka.
+                    </h3>
+                    <p>&nbsp</p>
+                    <h3 style="font-size: 30px">
+                        Recibimos nuestro llamado a India hace como 15 años atras.
+                    </h3>
+                    <p>&nbsp</p>
+                    <h3 style="font-size: 30px">
+                        Nos preparamos en el IBM Córdoba pero tambien con estudios
+                        profesionales.
+                    </h3>
+                    <p>&nbsp</p>
+                    <h3 style="font-size: 30px">
+                        Tenemos dos hijas: Abigail (5 años) y Ana Micaela (1 año)
+                    </h3>
+                    <p>&nbsp</p>
+                    <h3 style="font-size: 30px">
+                        Viajamos a India en el año 2018 en nuestro primer viaje
+                        exploratorio al noroeste de India.
+                    </h3>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="container2 footer myFooter bg-footer text-center">
+        <div class="row mt-3 mb-2">
+
+            <div class="redes col-md-12">
+                <h4>Seguinos en nuestras redes</h4>
+                <div>
+
+                    <a href="https://www.facebook.com/IsayJoseIND">
+                        <img src="../img/facebook.webp" alt="Facebook" width="30" height="auto">
+
+                        <a href="https://www.instagram.com/isayjoseind/">
+                            <img src="../img/instagram.webp" alt="Instagram" width="30" height="auto"></a>
+
+                        <a href="https://www.youtube.com/channel/UC07eWMNPq87-roVL60gIRyw">
+                            <img src="../img/youtube.webp" alt="Youtube" width="30" height="auto"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="col-md-12">© Copyright: IsayJoseIND | Todos los derechos reservados </p>
+    </footer>
+
+</body>
+
+</html>

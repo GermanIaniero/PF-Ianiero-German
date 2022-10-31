@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="¿Como ofrendar?">
+    <meta name="keywords" content="Ofrendar, dar, contribuir, ser parte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsayJose</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: gray;
+            color: #eee;
+            width: 100%;
+        }
+
+        input#abrir-cerrar {
+            visibility: hidden;
+            position: absolute;
+            top: -9999px;
+        }
+
+
+        label[for="abrir-cerrar"] {
+            cursor: pointer;
+            padding: 1rem;
+            background-color: gray;
+            color: #fff;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        .cerrar {
+            display: none;
+        }
+
+        #sidebar {
+            width: 0;
+        }
+
+        #contenido {
+            margin-left: 0;
+        }
+
+        input#abrir-cerrar:checked~#sidebar {
+            width: 300px;
+        }
+
+        input#abrir-cerrar:checked+label[for="abrir-cerrar"],
+        input#abrir-cerrar:checked~#contenido {
+            margin-left: 300px;
+            transition: margin-right .4s;
+        }
+
+
+        input#abrir-cerrar:checked+label[for="abrir-cerrar"] .cerrar {
+            display: inline;
+        }
+
+        input#abrir-cerrar:checked+label[for="abrir-cerrar"] .abrir {
+            display: none;
+        }
+
+        .sidebar {
+            position: fixed;
+            height: 100%;
+            width: 0;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: #00324b;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sidebar .boton-cerrar {
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            font-size: 2rem;
+            display: block;
+            padding: 0;
+            line-height: 1.5rem;
+            margin: 0;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+
+        }
+
+        .sidebar ul,
+        .sidebar li {
+            margin: 0;
+            padding: 0;
+            list-style: none inside;
+        }
+
+        .sidebar ul {
+            margin: 4rem auto;
+            display: block;
+            width: 80%;
+            min-width: 200px;
+        }
+
+        .sidebar a {
+            display: block;
+            font-size: 90%;
+            color: #eee;
+            text-decoration: none;
+
+        }
+
+        .sidebar a:hover {
+            color: #fff;
+            background-color: #f90;
+
+        }
+
+
+        #contenido {
+            transition: margin-right .4s;
+            padding: 1rem;
+        }
+
+        .abrir-cerrar {
+            color: #2E88C7;
+            font-size: 1rem;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+        <label for="abrir-cerrar">&#9776; <span class="abrir"></span><span class="cerrar"></span></label>
+        <div id="sidebar" class="sidebar">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="somos.html">Nosotros</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="oracion.html">Oración</a></li>
+                <li><a href="donaciones.html">Donaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+
+        <a href="https://api.whatsapp.com/send?phone=5493512404281" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+
+    </header>
+    <main>
+
+
+        <section class="hero">
+            <h1>Se parte <p>
+                    con <span class="color-acento">tu ofrenda</span></h1>
+            <button>Dona</button>
+        </section>
+
+        <section class="somos">
+            <div class="encabezado">
+                <div class="img-encabezado"></div>
+                <h3 font-size="10.17em">COMO CONTRIBUIR</h3>
+                <p>&nbsp</p>
+                <h4>
+                    <p>Usted puede ser parte de este proyecto
+                        orando y ofrendando.</p>
+                    <p>&nbsp</p>
+
+                    <p>
+                        Puede realizar su deposito hacia el
+                        Banco Santander Río
+                    <p>&nbsp</p>
+                    <p>
+                        Cta. Cte., Suc. 055
+                    <p>
+                        Nº de cuenta 1255/7
+                    <p>
+                        (Unión de las Asambleas de Dios)
+                    <p>
+                        CBU: 07 200 557 – 20 000 000 125 572
+                    <p>
+                        CUIT 30-53803502/1
+                    <p>&nbsp</p>
+                    <p>
+                        Luego envia un email a recibos@dnmargentina.org
+                    <p>
+                        o un WhatsApp al +54 911 2793 9630 avisando que es
+                    <p>
+                        para el proyecto ISA Y JOSE.
+                    </p>
+                    </h2>
+            </div>
+        </section>
+    </main>
+    <footer class="container2 footer myFooter bg-footer text-center">
+        <div class="row mt-3 mb-2">
+
+            <div class="redes col-md-12 ">
+                <h4>Seguinos en nuestras redes</h4>
+                <div>
+
+                    <a href="https://www.facebook.com/IsayJoseIND">
+                        <img src="../img/facebook.webp" alt="Facebook" width="30" height="auto">
+
+                        <a href="https://www.instagram.com/isayjoseind/">
+                            <img src="../img/instagram.webp" alt="Instagram" width="30" height="auto"></a>
+
+                        <a href="https://www.youtube.com/channel/UC07eWMNPq87-roVL60gIRyw">
+                            <img src="../img/youtube.webp" alt="Youtube" width="30" height="auto"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="col-md-12">© Copyright: IsayJoseIND | Todos los derechos reservados </p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
